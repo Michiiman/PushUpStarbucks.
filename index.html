@@ -193,7 +193,9 @@
       checkScreenWidth();
     });
 
-    checkScreenWidth();
+    window.addEventListener('resize', ()=>{if((screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth)<=911){menu.classList.remove('d-none')}})
+
+
 
 
 
